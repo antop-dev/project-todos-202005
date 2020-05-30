@@ -21,7 +21,9 @@
 
 ### History
 
-* [gitignore](http://gitignore.io/) 사이트에서 `.gitignore` 생성
+* [gitignore.io](http://gitignore.io/) 사이트에서 `.gitignore` 생성
 
 ### References
 
+* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
+* [gradle 버전 변경](https://tube-life.tistory.com/25)
