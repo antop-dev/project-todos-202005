@@ -21,7 +21,12 @@
 
 ### History
 
-* [gitignore](http://gitignore.io/) 사이트에서 `.gitignore` 생성
+* [gitignore.io](http://gitignore.io/) 사이트에서 `.gitignore` 생성
 
 ### References
 
+* [Accessing MongoDB Data with REST](https://spring.io/guides/gs/accessing-mongodb-data-rest/)
+* [Gradle 버전 변경](https://tube-life.tistory.com/25)
+* [Spring Boot Integration Testing with Embedded MongoDB](https://www.baeldung.com/spring-boot-embedded-mongodb)
+* [Spring Data REST Reference Guide](https://docs.spring.io/spring-data/rest/docs/current/reference/html/#reference)
+* [MockMvc Kotlin DSL](https://www.baeldung.com/mockmvc-kotlin-dsl)

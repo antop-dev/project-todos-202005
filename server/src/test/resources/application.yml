@@ -1,0 +1,5 @@
+logging:
+  level:
+    org.springframework.boot.autoconfigure.mongo.embedded: debug
+    org.springframework.data.document.mongodb: debug
+    org.mongodb: debug

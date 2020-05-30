@@ -1,0 +1,16 @@
+server:
+  servlet:
+    encoding:
+      force: true
+      force-request: true
+      force-response: true
+      charset: UTF-8
+
+spring:
+  data:
+    rest:
+      base-path: /api
+    mongodb:
+      host: localhost
+      port: 27017
+      database: todo
