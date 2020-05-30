@@ -1,0 +1,27 @@
+POST http://localhost:8080/api/todo
+Content-Type: application/json
+
+{
+  "title": "HTTP 할일 추가"
+}
+
+###
+
+GET http://localhost:8080/api/todo?sort=created,desc
+
+###
+
+PUT http://localhost:8080/api/todo/5ed26366838a34456fa07273
+Content-Type: application/json
+
+{
+  "title": "수정된 HTTP 할일 추가",
+  "deleted": "20200531181049"
+}
+
+###
+
+DELETE http://localhost:8080/api/todo/5ed26366838a34456fa07273
+
+
+###

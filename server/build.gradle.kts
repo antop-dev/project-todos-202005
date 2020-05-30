@@ -31,6 +31,8 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+    testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
+    testImplementation("com.github.javafaker", "javafaker", "1.0.2")
 }
 
 tasks.withType<Test> {
