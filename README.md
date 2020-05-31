@@ -1,6 +1,6 @@
 # Todo list
 
-`Spring + ＠`로 구현해 보는 Todo list 프로젝트 
+Spring + ＠로 구현해 보는 Todo list 프로젝트 
 
 ## Client
 
@@ -15,13 +15,15 @@
     * Rest Repositories
     * Rest Repositories HAL Browser
     * Spring HATEOAS
-    * Spring Data Reactive MongoDB
+    * Spring Data ~~Reactive~~ MongoDB
 * Gradle
 * MongoDB
 
 ### History
 
 * [gitignore.io](http://gitignore.io/) 사이트에서 `.gitignore` 생성
+* Gradle 멀티 프로젝트 구성
+* Spring Data MongoDB + REST 개발
 
 ### References
 

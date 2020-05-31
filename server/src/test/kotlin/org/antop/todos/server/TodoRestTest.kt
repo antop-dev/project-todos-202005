@@ -24,7 +24,7 @@ class TodoRestTest {
             title = "todo title"
         }
 
-        mockMvc.post("/todo") {
+        mockMvc.post("/api/todo") {
             contentType = MediaType.APPLICATION_JSON
             content = mapper.writeValueAsString(todo)
             accept = MediaType.APPLICATION_JSON
