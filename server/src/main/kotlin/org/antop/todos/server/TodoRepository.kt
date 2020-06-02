@@ -1,9 +1,9 @@
 package org.antop.todos.server
 
 import org.springframework.data.mongodb.repository.MongoRepository
-import org.springframework.data.rest.core.annotation.RepositoryRestResource
+import org.springframework.stereotype.Repository
 
-@RepositoryRestResource(collectionResourceRel = "todo", path = "todo")
+@Repository
 interface TodoRepository : MongoRepository<Todo, String> {
 
 }

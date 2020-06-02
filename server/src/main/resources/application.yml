@@ -8,8 +8,6 @@ server:
 
 spring:
   data:
-    rest:
-      base-path: /api
     mongodb:
       host: localhost
       port: 27017

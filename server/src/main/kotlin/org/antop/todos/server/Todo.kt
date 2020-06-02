@@ -1,7 +1,9 @@
 package org.antop.todos.server
 
 import com.fasterxml.jackson.annotation.JsonFormat
+import com.fasterxml.jackson.annotation.JsonIgnore
 import org.springframework.data.annotation.Id
+import org.springframework.hateoas.server.core.Relation
 import java.time.LocalDateTime
 
 /**
@@ -9,6 +11,7 @@ import java.time.LocalDateTime
  *
  * @author Antop
  */
+@Relation(collectionRelation = "todos")
 class Todo {
     /**
      * 아이디
@@ -28,15 +31,26 @@ class Todo {
     var created: LocalDateTime = LocalDateTime.now()
 
     /**
+     * 완료 여부
+     */
+    var done = false
+
+    /**
      * 완료 일시
      */
-    @JsonFormat(pattern = "yyyyMMddHHmmss")
-    var completed: LocalDateTime? = null
+    @JsonIgnore
+    var doned: LocalDateTime? = null
+
+    /**
+     * 삭제 여부
+     */
+    @JsonIgnore
+    var delete = false
 
     /**
      * 삭제 일시
      */
-    @JsonFormat(pattern = "yyyyMMddHHmmss")
+    @JsonIgnore
     var deleted: LocalDateTime? = null
 
     override fun equals(other: Any?): Boolean {
@@ -55,7 +69,7 @@ class Todo {
     }
 
     override fun toString(): String {
-        return "Todo(id=$id, title='$title', created=$created, completed=$completed, deleted=$deleted)"
+        return "Todo(id=$id, title='$title', created=$created, done=$done, doned=$doned, delete=$delete, deleted=$deleted)"
     }
 
 }
