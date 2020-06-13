@@ -6,3 +6,7 @@ subprojects {
 project(':server') {
 
 }
+
+project(':front') {
+
+}

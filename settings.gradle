@@ -1,2 +1,3 @@
 rootProject.name = 'project-todos'
 include 'server'
+include 'front'
