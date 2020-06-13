@@ -2,6 +2,7 @@ package org.antop.todos.server
 
 import com.fasterxml.jackson.annotation.JsonFormat
 import com.fasterxml.jackson.annotation.JsonIgnore
+import org.mongodb.morphia.annotations.Entity
 import org.springframework.data.annotation.Id
 import org.springframework.hateoas.server.core.Relation
 import java.time.LocalDateTime
@@ -11,6 +12,7 @@ import java.time.LocalDateTime
  *
  * @author Antop
  */
+@Entity
 @Relation(collectionRelation = "todos")
 class Todo {
     /**

@@ -1,4 +1,8 @@
-POST http://localhost:8080/api/todo
+GET http://localhost:8080/todos
+
+###
+
+POST http://localhost:8080/todos
 Content-Type: application/json
 
 {
@@ -7,11 +11,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:8080/api/todo?sort=created,desc
-
-###
-
-PUT http://localhost:8080/api/todo/5ed26366838a34456fa07273
+PUT http://localhost:8080/api/todos/5ed26366838a34456fa07273
 Content-Type: application/json
 
 {
@@ -21,7 +21,6 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:8080/api/todo/5ed26366838a34456fa07273
-
+DELETE http://localhost:8080/api/todos/5ed26366838a34456fa07273
 
 ###

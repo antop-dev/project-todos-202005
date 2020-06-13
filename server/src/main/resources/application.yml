@@ -6,6 +6,10 @@ server:
       force-response: true
       charset: UTF-8
 
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: debug
+
 spring:
   data:
     mongodb:

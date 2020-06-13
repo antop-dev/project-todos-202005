@@ -1,5 +1,6 @@
 package org.antop.todos.server
 
+import org.springframework.data.domain.PageRequest
 import org.springframework.hateoas.CollectionModel
 import org.springframework.hateoas.EntityModel
 import org.springframework.hateoas.IanaLinkRelations
@@ -10,13 +11,14 @@ import org.springframework.web.bind.annotation.*
 import java.time.LocalDateTime
 
 
+@CrossOrigin
 @RestController
 class TodoController(private val repository: TodoRepository, private val assembler: TodoModelAssembler) {
 
     @GetMapping("/todos")
     fun all(): CollectionModel<EntityModel<Todo>> {
         return CollectionModel.of(
-            repository.findAll().map { assembler.toModel(it) },
+            repository.findNotDeleted(PageRequest.of(0, 10)).map { assembler.toModel(it) },
             linkTo(methodOn(TodoController::class.java).all()).withSelfRel()
         )
     }
